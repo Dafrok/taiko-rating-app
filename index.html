@@ -20,6 +20,7 @@
             overflow: hidden;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
         }
 
         .header {
@@ -345,8 +346,26 @@
                 width: 160px;
             }
         }
+
+        .footer {
+            background: #90a4ae;
+            padding: 8px 24px;
+            font-size: 0.75em;
+            color: rgba(255, 255, 255, 0.7);
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer a {
+            color: rgba(255, 255, 255, 0.9);
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
     </style>
-  <script type="module" crossorigin src="/taiko-rating-app/assets/index-DlZhSy0K.js"></script>
+  <script type="module" crossorigin src="/taiko-rating-app/assets/index-D8HfSXdt.js"></script>
 </head>
 <body>
     <div class="header">
@@ -438,6 +457,8 @@
             </div>
         </div>
     </div>
+
+    <div class="footer" id="footer"></div>
 
 </body>
 </html>
