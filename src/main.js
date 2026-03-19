@@ -297,9 +297,12 @@ function displayResults(results) {
   resultsBody.innerHTML = '';
 
   if (!results || results.length === 0) {
+    tableWrapper.classList.remove('has-data');
     resultsBody.innerHTML = '<tr><td colspan="10" style="text-align:center;padding:40px;color:#90a4ae;">无计算结果，请重新拖入数据文件夹</td></tr>';
     return;
   }
+
+  tableWrapper.classList.add('has-data');
 
   currentRows = [];
 
